@@ -1,0 +1,17 @@
+# Entornos virtuales y temporales de Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Datos pesados o locales (se subirán a S3 en los siguientes pasos)
+*.csv
+*.zip
+*.parquet
