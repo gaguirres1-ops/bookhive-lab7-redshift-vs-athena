@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36">
+  <diagram name="Lab Athena - Terraform" id="Lab-Athena">
+    <mxGraphModel dx="822" dy="362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1760" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g2" parent="1" style="points=[];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;spacingRight=10;fontColor=#232F3E;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="   AWS Cloud" vertex="1">
+          <mxGeometry height="720" width="1120" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="g3" parent="1" style="points=[];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#147EBA;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;spacingRight=10;fontColor=#147EBA;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="   Region us-east-2 (Ohio)" vertex="1">
+          <mxGeometry height="640" width="860" x="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#FFF7E0;strokeColor=#ED7100;fontColor=#232F3E;fontSize=11;align=center;verticalAlign=top;spacing=8;dashed=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;sketch=1;curveFitting=1;jiggle=2;" value="Tu PC · terraform apply + generar_datos.py" vertex="1">
+          <mxGeometry height="72" width="140" x="20" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=none;fillColor=#232F3E;shape=mxgraph.aws4.users;pointerEvents=1;" value="Consumidores&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;runner.py · 5 en paralelo&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="56" x="40" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#7AA116;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="S3 datos&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;bookhive-lab-datos-g7&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="440" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#8C4FFF;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue;" value="Glue Data Catalog&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;bd bookhive_lab · 2 tablas&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="760" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#8C4FFF;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.athena;" value="Athena&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;workgroup lab-athena&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="760" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#7AA116;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="S3 resultados&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;bookhive-lab-athena-res-g7&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="1080" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#ED7100;strokeWidth=2;dashed=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="n6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="556" />
+              <mxPoint x="400" y="426" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="n8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="668" />
+              <mxPoint x="700" y="426" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="n6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="n9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p15" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="1" vertex="1">
+          <mxGeometry height="24" width="24" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="p16" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="2" vertex="1">
+          <mxGeometry height="24" width="24" x="300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="p17" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="3" vertex="1">
+          <mxGeometry height="24" width="24" x="792" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="p18" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="4" vertex="1">
+          <mxGeometry height="24" width="24" x="600" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="p19" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="5" vertex="1">
+          <mxGeometry height="24" width="24" x="940" y="384" as="geometry" />
+        </mxCell>
+        <mxCell id="b20" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#1E5BB8;fontColor=#232F3E;fontSize=14;align=center;verticalAlign=top;spacing=8;dashed=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;sketch=1;curveFitting=1;jiggle=2;" value="Pasos del flujo" vertex="1">
+          <mxGeometry height="720" width="420" x="1310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;fontStyle=0;fontColor=#232F3E;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="&lt;b&gt;1.&lt;/b&gt; Desde tu PC: generar_datos.py crea los CSV y terraform apply (infra/datos) crea el bucket y los sube.&lt;br&gt;&lt;br&gt;&lt;b&gt;2.&lt;/b&gt; Los consumidores (runner.py, 5 en paralelo) envian las consultas SQL a Athena.&lt;br&gt;&lt;br&gt;&lt;b&gt;3.&lt;/b&gt; Athena consulta en el Glue Data Catalog donde estan las tablas y como son sus columnas (creados con Terraform, infra/athena).&lt;br&gt;&lt;br&gt;&lt;b&gt;4.&lt;/b&gt; Athena lee los CSV directamente en S3: los datos NO se cargan en ninguna base.&lt;br&gt;&lt;br&gt;&lt;b&gt;5.&lt;/b&gt; Athena escribe el resultado en el bucket de resultados.&lt;br&gt;&lt;br&gt;&lt;i&gt;Sin VPC: Athena y S3 son servicios regionales; no necesitan subredes. El workgroup corta cualquier consulta que escanee mas de 1 GB.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="650" width="380" x="1330" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
