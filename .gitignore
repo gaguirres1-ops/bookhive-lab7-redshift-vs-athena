@@ -15,3 +15,8 @@ Thumbs.db
 *.csv
 *.zip
 *.parquet
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log

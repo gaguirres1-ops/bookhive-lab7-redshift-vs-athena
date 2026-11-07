@@ -16,3 +16,13 @@ Este laboratorio realiza un análisis comparativo de rendimiento y arquitectura 
 * `sql/`: Consultas SQL para creación de tablas y análisis comparativo.
 * `scripts/`: Scripts en Python/Boto3 para automatización.
 * `docs/`: Documentación del laboratorio y capturas de pantalla.
+## Orden de ejecuci�n (regi�n us-east-2)
+1. pip install boto3
+2. python datos\generar_datos.py --sesiones 2000000 --usuarios 50000
+3. terraform init y terraform apply en infra\datos, infra\athena e infra\redshift con -var sufijo=$sufijo (en Redshift definir $env:TF_VAR_admin_password)
+4. python scripts\runner.py para cargar en Redshift y para el benchmark de Athena y Redshift con --rondas 3 --concurrencia 5
+
+## Limpieza (en este orden)
+1. terraform destroy de redshift
+2. terraform destroy de athena
+3. terraform destroy de datos
