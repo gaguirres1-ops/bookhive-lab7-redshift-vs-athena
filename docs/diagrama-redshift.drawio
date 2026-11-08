@@ -1,0 +1,87 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36">
+  <diagram name="Lab Redshift - Terraform" id="Lab-Redshift">
+    <mxGraphModel dx="822" dy="362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1760" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g2" parent="1" style="points=[];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;spacingRight=10;fontColor=#232F3E;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="   AWS Cloud" vertex="1">
+          <mxGeometry height="720" width="1120" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="g3" parent="1" style="points=[];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#147EBA;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;spacingRight=10;fontColor=#147EBA;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="   Region us-east-2 (Ohio)" vertex="1">
+          <mxGeometry height="640" width="860" x="380" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="g4" parent="1" style="points=[];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#248814;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;spacingRight=10;fontColor=#248814;dashed=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="   VPC por defecto (Subredes en 3 AZs + Security Group default)" vertex="1">
+          <mxGeometry height="400" width="540" x="660" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#FFF7E0;strokeColor=#ED7100;fontColor=#232F3E;fontSize=11;align=center;verticalAlign=top;spacing=8;dashed=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;sketch=1;curveFitting=1;jiggle=2;" value="Tu PC · Yair (Terraform apply)&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;infra/redshift/main.tf&lt;/font&gt;" vertex="1">
+          <mxGeometry height="72" width="140" x="20" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=none;fillColor=#232F3E;shape=mxgraph.aws4.users;pointerEvents=1;" value="Consumidores · Joaquín&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;runner.py + COPY + Benchmark&lt;/font&gt;" vertex="1">
+          <mxGeometry height="56" width="56" x="40" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#7AA116;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="S3 datos&lt;br&gt;&lt;font style=&quot;font-size:9px&quot;&gt;bookhive-lab-datos-g7-0711&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="420" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#248814;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.endpoint;" value="VPC Endpoint S3&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;lab-s3-gateway (Sin costo)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="690" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#DD344C;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" value="Rol IAM&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;redshift-s3-lab (Lectura datos/*)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="850" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" parent="1" style="outlineConnect=0;fontColor=#232F3E;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;gradientColor=none;strokeColor=#ffffff;fillColor=#8C4FFF;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.redshift;" value="Redshift Serverless&lt;br&gt;&lt;font style=&#39;font-size:9px&#39;&gt;Namespace: lab-bookhive-ns (dev)&lt;br&gt;Workgroup: lab-bookhive (4-8 RPU)&lt;br&gt;Límite: 4 RPU-h/día&lt;/font&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="980" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="b5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#ED7100;strokeWidth=2;dashed=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="556" />
+              <mxPoint x="360" y="500" />
+              <mxPoint x="1004" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="n6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="n10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1004" y="668" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="n10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="n8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#232F3E;strokeWidth=2;dashed=0;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="n7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="n9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endSize=8;strokeColor=#DD344C;strokeWidth=2;dashed=1;sketch=1;curveFitting=1;jiggle=2;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1004" y="224" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p16" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="1" vertex="1">
+          <mxGeometry height="24" width="24" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="p17" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="2" vertex="1">
+          <mxGeometry height="24" width="24" x="300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="p18" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="3" vertex="1">
+          <mxGeometry height="24" width="24" x="874" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="p19" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="4" vertex="1">
+          <mxGeometry height="24" width="24" x="800" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="p20" parent="1" style="ellipse;html=1;fillColor=#1E5BB8;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontSize=12;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="5" vertex="1">
+          <mxGeometry height="24" width="24" x="550" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="b21" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#1E5BB8;fontColor=#232F3E;fontSize=14;align=center;verticalAlign=top;spacing=8;dashed=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;sketch=1;curveFitting=1;jiggle=2;" value="Pasos del flujo Redshift" vertex="1">
+          <mxGeometry height="720" width="420" x="1310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;fontStyle=0;fontColor=#232F3E;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" value="&lt;b&gt;1.&lt;/b&gt; Desde tu PC (Yair): terraform apply (infra/redshift) levanta el endpoint S3 Gateway, rol IAM, namespace y workgroup de 4 RPU con límite de uso diario.&lt;br&gt;&lt;br&gt;&lt;b&gt;2.&lt;/b&gt; Los consumidores (Joaquín): envían las sentencias DDL (CREATE TABLE) y el comando COPY para cargar los datos en almacenamiento columnar administrado.&lt;br&gt;&lt;br&gt;&lt;b&gt;3.&lt;/b&gt; Redshift Serverless asume el rol IAM (redshift-s3-lab) que le otorga permisos de solo lectura sobre el prefijo datos/* del bucket S3.&lt;br&gt;&lt;br&gt;&lt;b&gt;4.&lt;/b&gt; El comando COPY viaja a través del VPC Endpoint S3 (tipo Gateway, sin costo) por la red privada interna de AWS sin salir a Internet ni consumir NAT Gateway.&lt;br&gt;&lt;br&gt;&lt;b&gt;5.&lt;/b&gt; Los datos CSV se transfieren desde el bucket bookhive-lab-datos-g7-0711 hacia los nodos de cómputo/almacenamiento de Redshift.&lt;br&gt;&lt;br&gt;&lt;i&gt;Con VPC: A diferencia de Athena, Redshift Serverless requiere VPC, subredes en al menos 3 AZs y Security Group. Su capacidad base fijada en 4 RPU evita costos excesivos.&lt;/i&gt;" vertex="1">
+          <mxGeometry height="650" width="380" x="1330" y="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
